@@ -1,0 +1,6 @@
+<**/*.{ml,mli}> : annot, debug
+<gg> : include
+<src> : include
+<test> : include
+<src/rpngstub.c> : use_libpng
+<test/pngtrip.native> : use_bigarray, use_libpng

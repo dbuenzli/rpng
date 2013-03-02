@@ -1,0 +1,51 @@
+OASISFormat: 0.3
+Name: rpng
+Version: 0.0.1
+Synopsis: Simple PNG codec. 
+Authors: Daniel Bünzli <daniel.buenzli at erratique.ch>
+Copyrights: (c) 2012 Daniel C. Bünzli
+License: BSD3
+Homepage: http://erratique.ch/software/rpng
+Description:
+  is an OCaml module for TODO.
+  .
+  is made of a single independent module and distributed under the
+  BSD3 license.
+
+OCamlVersion: >= 3.12.0
+Plugins: META (0.3)
+BuildTools:ocamlbuild
+
+Library rpng
+ Path: src
+ Modules: Rpng
+
+Executable test
+ Path: test
+ MainIs: test.ml
+ CompiledObject: Best
+ BuildDepends: rpng
+ Install: false
+
+Test test
+ Command: $test
+
+Document api
+ Title: 's documentation and API reference
+ Type: ocamlbuild (0.3)
+ BuildTools+: ocamldoc
+ XOCamlbuildLibraries: rpng
+ XOCamlbuildPath: doc
+
+Document distribution
+ Title: "Rpng's README and CHANGES files"
+ DataFiles: README CHANGES
+
+Document samples
+ Title: "Rpng's sample code"
+ DataFiles: test/*.ml
+
+SourceRepository head
+ Type: git
+ Location: git://erratique.ch/repos/rpng.git
+ Browser: http://erratique.ch/repos/rpng
