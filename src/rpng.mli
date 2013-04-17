@@ -6,11 +6,15 @@
 
 (** PNG codec. 
 
+   Decodes and encodes PNG streams.
+
    Reads and writes PNG streams with bigarrays. The first pixel of
    the array is the image's lower left pixel.
 
    {b Limitations.}
    {ul
+   {- {Gg.Raster.format}'s size are [int], PNG ones are [int32]
+       this can be a problem on 32bits machines.}
     {- Width, height and resolution values are mapped to [int]'s but
     can be [int32] in practice.}
     {- The writer is not clever, no alpha separation or color indexing.}
