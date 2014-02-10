@@ -1,4 +1,4 @@
-<**/*.{ml,mli}> : annot, debug
+<**/*.{ml,mli}> : bin_annot, annot
 <gg> : include
 <src> : include
 <test> : include

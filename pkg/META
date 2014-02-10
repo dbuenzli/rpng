@@ -1,0 +1,7 @@
+version = "%%VERSION%%"
+description = "Simple PNG codec"
+archive(byte) = "rpng.cma"
+archive(byte, plugin) = "rpng.cma"
+archive(native) = "rpng.cmxa"
+archive(native, plugin) = "rpng.cmxs"
+exists_if = "rpng.cma"

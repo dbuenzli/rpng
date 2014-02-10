@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Usage: build has_native
+
+set -e 
+LOC=`dirname $0`
+
+. $LOC/pkg-builder
+
+NATIVE=$1
+
+add lib pkg/META		
+add lib src/rpng.mli
+add lib src/rpng.cmti
+add lib src/rpng.cmi
+add lib src/rpng.cmx
+add lib src/rpng.cma
+add lib src/rpng.a
+add lib src/rpng.cmxa
+add lib src/rpng.cmxs
+
+add doc README.md
+add doc CHANGES.md
+
+build
+install rpng
