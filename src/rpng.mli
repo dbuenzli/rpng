@@ -1,5 +1,5 @@
 (*---------------------------------------------------------------------------
-   Copyright %%COPYRIGHT%%. All rights reserved.
+   Copyright (c) 2012 Daniel C. Bünzli. All rights reserved.
    Distributed under the BSD3 license, see license at the end of the file.
    %%NAME%% release %%VERSION%%
   ---------------------------------------------------------------------------*)
@@ -117,7 +117,7 @@ val output : out_channel -> ?compress:compression ->
     Raises {!Png.Error} (data), [Sys_error] (io) and [Invalid_arg] (bounds). *)
 
 (*---------------------------------------------------------------------------
-   Copyright %%COPYRIGHT%%
+   Copyright (c) 2012 Daniel C. Bünzli
    All rights reserved.
 
    Redistribution and use in source and binary forms, with or without

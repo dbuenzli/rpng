@@ -1,5 +1,5 @@
 (*---------------------------------------------------------------------------
-   Copyright %%COPYRIGHT%%. All rights reserved.
+   Copyright (c) 2012 Daniel C. Bünzli. All rights reserved.
    Distributed under the BSD3 license, see license at the end of the file.
    %%NAME%% release %%VERSION%%
   ---------------------------------------------------------------------------*)
@@ -132,7 +132,7 @@ let output oc ?(compress = Default) ?gamma ?res ?(first = 0)  ?(w_skip = 0)
   | Invalid_argument e -> raise (Error e)
 
 (*---------------------------------------------------------------------------
-   Copyright %%COPYRIGHT%%
+   Copyright (c) 2012 Daniel C. Bünzli
    All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
