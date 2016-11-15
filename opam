@@ -1,9 +1,9 @@
 opam-version: "1"
 maintainer: "Daniel Bünzli <daniel.buenzl i@erratique.ch>"
 homepage: "http://erratique.ch/software/rpng"
-authors: ["Daniel Bünzli <daniel.buenzli i@erratique.ch>"]
+authors: ["Daniel Bünzli <daniel.buenzl i@erratique.ch>"]
 doc: "http://erratique.ch/software/rpng/doc/Rpng"
-tags: [ "png" "bindings" "codec" ]
+tags: [ "png" "bindings" "codec" "org:erratique" ]
 license: "BSD3"
 ocaml-version: [>= "4.00.1"]
 depends: [ "ocamlfind" ]
